@@ -1,0 +1,10 @@
+name: SafariNet
+main: me.ezeh.safarinet.SafariNet
+version: 1.0-SNAPSHOT
+author: spammy23
+description: Allows players to catch mobs and release them
+commands:
+  safarinet:
+    description:
+    aliases: [sn, safari]
+    usage: /safarinet giv <player> [singleuse|single|reusable]

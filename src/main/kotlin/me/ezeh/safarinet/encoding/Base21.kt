@@ -38,10 +38,9 @@ object Base21 { // TODO: fix
 
     private infix fun Int.pow(other: Int): Int = this.toDouble().pow(other).toInt()
 
+    private operator fun BigInteger.minus(int: Int) = minus(BigInteger.valueOf(int.toLong()))
+
+    private operator fun BigInteger.rem(int: Int) = rem(java.math.BigInteger.valueOf(int.toLong()))
+
+    private operator fun BigInteger.compareTo(int: Int) = compareTo(BigInteger.valueOf(int.toLong()))
 }
-
-private operator fun BigInteger.minus(int: Int) = minus(BigInteger.valueOf(int.toLong()))
-
-private operator fun BigInteger.rem(int: Int) = rem(java.math.BigInteger.valueOf(int.toLong()))
-
-private operator fun BigInteger.compareTo(int: Int) = compareTo(BigInteger.valueOf(int.toLong()))

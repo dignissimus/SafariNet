@@ -10,7 +10,6 @@ class SafariNet : JavaPlugin() {
     }
 
     override fun onEnable() {
-        reloadConfig()
         if (!dataFolder.exists())
             dataFolder.mkdirs()
         SafariConfiguration.GLOBAL = SafariConfiguration(this)
